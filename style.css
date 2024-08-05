@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,7 +17,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     background-color: #1F2937;
-    height: auto;
+    height: 50px;
     width: 100vw;
 }
 
@@ -26,16 +25,18 @@ header .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 auto;
+    flex: 1 1 0;
     font-size: 24px;
     color: #F9FAF8;
+    width: 100%;
 }
 
 header nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 auto;
+    flex: 1 1 0;
+    width: 100%;
 }
 
 header nav ul {
@@ -72,6 +73,7 @@ main section {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #1F2937;
+    padding: 100px;
 }
 
 .hero-texts {
@@ -80,16 +82,51 @@ main section {
     justify-content: center;
     align-items: center;
     text-align: left;
+    width: 100%;
+    text-wrap: wrap;
 }
 
-.hero h1 {
+.hero-texts div {
+    margin-left: 150px;
+}
+
+.hero-texts h1 {
     font-size: 48px;
     font-weight:1000;
     color: #F9FAF8;
+    line-height: 1.5;
 }
 
-.hero p {
+.hero-texts p {
     font-size: 18px;
     color: #E5E7EB;
+    text-align: left;
+    line-height: 1.5;    
 }
 
+.hero-texts button {
+    background-color: rgb(99, 99, 255);
+    padding: 8px 30px;
+    color: #F9FAF8;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.image-holder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero .image-holder div {
+    background-color: #E5E7EB;
+    height: 200px;
+    width: 400px;
+    color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
