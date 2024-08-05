@@ -9,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
 }
 
 header {
@@ -17,7 +16,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     background-color: #1F2937;
-    height: 50px;
+    height: auto;
     width: 100vw;
 }
 
@@ -29,28 +28,27 @@ header .logo {
     font-size: 24px;
     color: #F9FAF8;
     width: 100%;
+    margin-left: 58px;
 }
 
 header nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 0;
+    flex: 2 1 0;
     width: 100%;
 }
 
 header nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     list-style: none;
     gap: 15px;
 }
 
 header ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 15px;
     color: #E5E7EB;
 }
 
@@ -58,7 +56,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
     align-items: center;
     width: 100vw;
 }
@@ -86,9 +83,6 @@ main section {
     text-wrap: wrap;
 }
 
-.hero-texts div {
-    margin-left: 150px;
-}
 
 .hero-texts h1 {
     font-size: 48px;
@@ -101,16 +95,17 @@ main section {
     font-size: 18px;
     color: #E5E7EB;
     text-align: left;
-    line-height: 1.5;    
+    line-height: 1.5;  
 }
 
 .hero-texts button {
-    background-color: rgb(99, 99, 255);
+    background-color: #3992F6;
     padding: 8px 30px;
     color: #F9FAF8;
     font-size: 20px;
     font-weight: 700;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .image-holder {
@@ -129,4 +124,46 @@ main section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.info.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    /* border: 1px solid black; */
+}
+
+.info.section h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.info.section .grid-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 60px;
+}
+
+.info.section .grid-card .card-holder {
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-top: 30px;
+    width: 150px;
+    text-wrap: wrap;
+}
+
+.info.section .grid-card .card-holder .cards {
+    border: 5px solid #3992F6;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.info.section .grid-card .card-holder p {
+    margin-top: 5px;
 }
