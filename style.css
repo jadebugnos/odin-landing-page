@@ -59,7 +59,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 main section {
@@ -210,9 +210,38 @@ main section {
     gap: 100px;
     align-items: center;
     flex-direction: row;
+    border-radius: 12px;
+    text-wrap: wrap;
 }
 
-.action.section .action-holder div:first-child {
+.action-holder div > p:first-child {
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.action-holder div > p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.action button {
+    background-color: #3882F6;
+    padding: 8px 30px;
+    color: #F9FAF8;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #F9FAF8;
+}
+
+footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+    padding: 50px;
+    font-size: 18px;
 }
